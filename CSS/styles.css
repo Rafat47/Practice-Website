@@ -173,15 +173,48 @@ section {
   border: 1px solid var(--color-primary);
 }
 
+/* Input */
+
+.form-group {
+  border: 1px solid var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input::placeholder {
+  color: black;
+}
+input[type="email"] {
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+  padding: 0.8rem 1.6rem;
+  width: 100%;
+}
+input[tpye="email"]:focus {
+  border: 0;
+}
+.mail-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.form-button {
+  background-color: transparent;
+  border: 0;
+  border-left: 1px solid black;
+  padding: 5px;
+}
+
 /* Plans */
 
+.desktop {
+  display: none;
+}
 .plans .main {
   display: flex;
   flex-direction: column;
   border: 1px solid var(--color-primary);
-}
-.main div {
-  border-bottom: 1px solid var(--color-primary);
 }
 .card .btn {
   border-bottom: 0;
@@ -198,6 +231,7 @@ p {
   padding: 1.6rem 0 0 1.6rem;
   min-height: 147px;
   height: 240px;
+  border-bottom: 1px solid black;
 }
 .card img {
   max-width: 100%;
@@ -219,4 +253,38 @@ p {
 .secondary {
   font-size: 1.4rem;
   font-weight: 300;
+}
+.last-card {
+  border-bottom: 0;
+}
+.mobile {
+  margin-top: 32px;
+}
+
+@media screen and (min-width: 991px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+  .aside {
+    padding: 32px;
+    padding-left: 0;
+    position: sticky;
+    top: 0;
+  }
+  .plans .main {
+    border: 0;
+    border-left: 1px solid black;
+  }
+  .plans .container {
+    border: 1px solid black;
+    border-left: 0;
+    border-right: 0;
+  }
+  .desktop {
+    display: flex;
+  }
+  .mobile {
+    display: none;
+  }
 }
