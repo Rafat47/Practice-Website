@@ -1,0 +1,9 @@
+:root {
+  --color-primary: black;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
