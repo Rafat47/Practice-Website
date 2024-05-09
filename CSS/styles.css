@@ -288,3 +288,62 @@ p {
     display: none;
   }
 }
+
+/* Footer */
+
+.footer-logo {
+  max-width: 100%;
+  padding: 64px 0 16px;
+  border-bottom: 1px solid black;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+.footer-bar {
+  display: flex;
+  padding: 0;
+}
+.footer-item {
+  padding: 5px;
+}
+
+.link-box {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 2px;
+  margin: 1px;
+  margin-left: 21px;
+}
+.link-box:hover {
+  background: rgb(0, 0, 0, 0.25);
+  translate: 0;
+}
+.message-icon {
+  width: 14px;
+  height: 14px;
+  align-self: center;
+}
+.footer-contact p {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 443px) {
+  .footer-logo {
+    padding: 128px 0 64px;
+    width: 100%;
+  }
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-contact {
+    display: flex;
+    align-items: center;
+  }
+  .link-box {
+    display: flex;
+    justify-content: space-between;
+  }
+}
