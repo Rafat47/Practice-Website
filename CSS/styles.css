@@ -96,10 +96,11 @@ a:hover {
   position: relative;
   top: 10px;
   margin-left: 10px;
-  transition: margin 0.15s;
+  left: 0;
+  transition: left 0.15s;
 }
 .link-arrow:hover::after {
-  margin-left: 15px;
+  left: 10px;
 }
 
 /* Navigation Bar */
