@@ -56,7 +56,7 @@ p {
   font-weight: 700;
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 800px) {
   body {
     font-size: 1.4rem;
   }
@@ -132,7 +132,7 @@ section {
   padding: 1.6rem;
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 800px) {
   .container {
     max-width: 1312px;
   }
@@ -154,7 +154,7 @@ section {
   text-align: left;
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 800px) {
   .hero {
     padding: 256px 0 32px 0;
   }
@@ -262,7 +262,7 @@ p {
   margin-top: 32px;
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 800px) {
   .grid {
     display: grid;
     grid-template-columns: 40% auto;
@@ -336,7 +336,7 @@ p {
   margin-bottom: 16px;
 }
 
-@media screen and (min-width: 443px) {
+@media screen and (min-width: 800px) {
   .footer-logo {
     padding: 128px 0 64px;
     width: 100%;
